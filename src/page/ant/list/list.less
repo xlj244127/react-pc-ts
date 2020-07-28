@@ -1,0 +1,67 @@
+.list-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .nav {
+    width: 100%;
+    display: flex;
+    > div {
+      width: 2rem;
+      height: 0.5rem;
+      text-align: center;
+      line-height: 0.5rem;
+      background: rgba(paleturquoise, 0.2);
+      margin-right: 0.5rem;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+
+      &.active {
+        background: goldenrod;
+        color: #fff;
+      }
+    }
+  }
+  .list-content {
+    height: 100%;
+    overflow-y: auto;
+    .box {
+      .title {
+        width: 100%;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        background: rosybrown;
+      }
+      &:nth-child(1) {
+        height: 6rem;
+        background: rgba(firebrick, 0.1);
+      }
+      &:nth-child(2) {
+        height: 2rem;
+        background: rgba(blueviolet, 0.1);
+      }
+      &:nth-child(3) {
+        height: 4rem;
+        background: rgba(saddlebrown, 0.1);
+      }
+      &:nth-child(4) {
+        height: 1rem;
+        background: rgba(gold, 0.1);
+      }
+      &:nth-child(5) {
+        height: 8rem;
+        background: rgba(gold, 0.1);
+      }
+      &:nth-child(6) {
+        height: 9rem;
+        background: rgba(gold, 0.1);
+      }
+    }
+  }
+}

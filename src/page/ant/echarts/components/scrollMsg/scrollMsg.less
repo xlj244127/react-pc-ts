@@ -1,0 +1,31 @@
+.scroll-msg {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+
+	.title {
+		height: 0.3rem;
+		line-height: 0.3rem;
+
+		&::before {
+			content: "|";
+			transform: translateY(-50%);
+			height: 0.16rem;
+			width: 0.03rem;
+			background: #427aff;
+		}
+	}
+
+	.log-box {
+		flex: 1;
+		padding-left: 0.1rem;
+		overflow-y: auto;
+
+		> div {
+			width: 100%;
+			height: 0.4rem;
+			line-height: 0.4rem;
+		}
+	}
+}

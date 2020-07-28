@@ -1,0 +1,43 @@
+.page-home-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .home-content {
+    width: 100%;
+    flex: 1 1;
+    min-height: 0;
+    display: flex;
+    .content-left {
+      flex: 0 0 7.5rem;
+      display: flex;
+      flex-flow: column nowrap;
+      margin-right: 0.2rem;
+      .pie-charts {
+        width: 100%;
+        height: 3rem;
+        background: #ccc;
+      }
+      .line-charts {
+        width: 100%;
+        flex: 1 1;
+        margin-top: 0.2rem;
+        background: #999;
+      }
+    }
+    .content-right {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+  .home-footer {
+    width: 100%;
+    flex: 0 0 1.5rem;
+    margin-top: 0.2rem;
+    background: #ccc;
+    box-sizing: border-box;
+    padding-left: 0.2rem;
+    overflow: hidden;
+  }
+}

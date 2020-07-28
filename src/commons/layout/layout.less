@@ -1,0 +1,31 @@
+.page-layout {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  overflow: hidden;
+
+  > div:first-child {
+  }
+  > div:nth-child(2) {
+    min-height: 0;
+    flex: 1 1 0;
+    display: flex;
+    flex: row nowrap;
+    .content {
+      width: 100%;
+      height: 100%;
+      background-color: #f2f2f2;
+      box-sizing: border-box;
+      padding: 0.2rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      display: flex;
+      position: relative;
+
+      &:first-child {
+        flex-shrink: 0;
+        box-shadow: 0.02rem 0 0 0.05rem 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

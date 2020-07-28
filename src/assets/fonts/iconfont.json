@@ -1,0 +1,226 @@
+{
+  "id": "1339845",
+  "name": "固体废物智慧监管系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "paicon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7935710",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "10238149",
+      "name": "date",
+      "font_class": "date",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "10238150",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "10238151",
+      "name": "building",
+      "font_class": "building",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "10238153",
+      "name": "living_garbage",
+      "font_class": "living_garbage",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "10238154",
+      "name": "reset",
+      "font_class": "reset",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "10238155",
+      "name": "regeneration",
+      "font_class": "regeneration",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "10238157",
+      "name": "industrial",
+      "font_class": "industrial",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "10238158",
+      "name": "hazardous_waste",
+      "font_class": "hazardous_waste",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "10238159",
+      "name": "sewage_plant",
+      "font_class": "sewage_plant",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "10238222",
+      "name": "an",
+      "font_class": "an",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "10238224",
+      "name": "pack_up",
+      "font_class": "pack_up",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "10238494",
+      "name": "medical",
+      "font_class": "medical",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "10255838",
+      "name": "exit",
+      "font_class": "exit",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "10290982",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "10321545",
+      "name": "shut_down",
+      "font_class": "shut_down",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "10356774",
+      "name": "enterprise",
+      "font_class": "enterprise",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "10446663",
+      "name": "uncheck",
+      "font_class": "uncheck",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "10446681",
+      "name": "selected",
+      "font_class": "selected",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "10450930",
+      "name": "triangle-down",
+      "font_class": "triangle-down",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "10730402",
+      "name": "slide_left",
+      "font_class": "slide_left",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "10730403",
+      "name": "slide_right",
+      "font_class": "slide_right",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "10804415",
+      "name": "password",
+      "font_class": "password1",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "10804417",
+      "name": "delete",
+      "font_class": "delete1",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "10804418",
+      "name": "verification_code",
+      "font_class": "verification_code",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "10804420",
+      "name": "account",
+      "font_class": "account1",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "11139760",
+      "name": "c-confirm",
+      "font_class": "confirm",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11237958",
+      "name": "c-warn",
+      "font_class": "warn",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "11310257",
+      "name": "collapse",
+      "font_class": "collapse",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11329753",
+      "name": "back",
+      "font_class": "fanhuicopy",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11533828",
+      "name": "mapback",
+      "font_class": "mapback",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
