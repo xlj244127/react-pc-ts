@@ -22,7 +22,7 @@ const ComTable = (props: Pval) => {
     let col: any = []
     if (props.active === 1) {
       col = [
-        { title: '序号', dataIndex: 'key', key: 'key', width: 1 * size, render: (t: any, v: any, index: number) => index + 1 + (props.curPage -1) * props.pageSize },
+        { title: '序号', dataIndex: 'key', key: 'key', width: 1 * size, render: (t: any, v: any, index: number) => index + 1 + (props.curPage - 1) * props.pageSize },
         { title: '姓名', dataIndex: 'name', key: 'name', width: 1.3 * size, render: (t: any, v: any) => <div>{t}</div> },
         { title: '住址', dataIndex: 'address', key: 'address', width: 1.5 * size, render: (t: any, v: any) => <div className="elip">{t}</div> },
         { title: '联系方式', dataIndex: 'phone', key: 'phone', width: 1.5 * size, render: (t: any, v: any) => <div className="elip">{t}</div> },
@@ -31,7 +31,7 @@ const ComTable = (props: Pval) => {
       ];
     }
     setColumns(col);
-  }, [props.active])
+  }, [props, size])
 
   return (
     <div className="wrap-box">

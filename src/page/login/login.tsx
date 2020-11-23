@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from "react-router-dom";
 import './login.less';
 import logo from '../../assets/images/logo.jpg';
 import { useAction } from '../../store/store';
+import commonFunc from 'untis/common-func';
 
 let timer: any;
 
@@ -11,9 +12,17 @@ const Login = (props: any) => {
 
   const [show, setShow] = useState(true);
   const [text, setText] = useState("获取验证码");
-  const [mobile, setMobile] = useState("18529533634");
-  const [code, setCode] = useState("10086");
+  const [mobile, setMobile] = useState("");
+  const [code, setCode] = useState("");
   const [isError, setIsError] = useState(true);
+
+  useEffect(() => {
+    let info = commonFunc.getCookie("info");
+    if (info) {
+      setMobile(JSON.parse(info).mobile);
+      setCode(JSON.parse(info).code);
+    }
+  }, [])
 
   const getMobile = (e: any) => {
     setMobile(e.target.value);
@@ -23,8 +32,8 @@ const Login = (props: any) => {
   }
   const getCode = () => {
     let count = 60;
-    timer = setInterval(()=>{
-      if (count > 0 &&  count <= 60) {
+    timer = setInterval(() => {
+      if (count > 0 && count <= 60) {
         setShow(false);
         count--
         const title = `${text}${count}s`;
@@ -45,6 +54,9 @@ const Login = (props: any) => {
       props.history.push("/ant/echarts");
       action.changeHasAuth(true);
       sessionStorage.setItem("isLogin", "true");
+      let obj = { "mobile": mobile, "code": code };
+      commonFunc.setCookie("info", JSON.stringify(obj), 7);
+      commonFunc.setCookie("token", "xulongji", 1);
     } else {
       setIsError(false);
     }
@@ -53,15 +65,15 @@ const Login = (props: any) => {
     <div className="page-content">
       <div className="main">
         <div className="nav">
-          <img alt="图标" className="logo" src={logo}/>
+          <img alt="图标" className="logo" src={logo} />
         </div>
         <div className="input">
           <div className="mobile">
             <div className="mobile-left">+86</div>
-            <input onChange={getMobile} maxLength={11} value={mobile} className="mobile-right" placeholder="请输入手机号码"/>
+            <input onChange={getMobile} maxLength={11} value={mobile} className="mobile-right" placeholder="请输入手机号码" />
           </div>
           <div className="code">
-            <input className="n-left" maxLength={6} value={code} onChange={getAuto} placeholder="请输入验证码"/>
+            <input className="n-left" maxLength={6} value={code} onChange={getAuto} placeholder="请输入验证码" />
             {
               show ? <div className="n-right blueBg" onClick={getCode}>{text}</div> : <div className="n-right grayBg">{text}</div>
             }

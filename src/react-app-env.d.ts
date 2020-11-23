@@ -35,8 +35,8 @@ declare module '*.png' {
 }
 
 declare module '*.webp' {
-    const src: string;
-    export default src;
+  const src: string;
+  export default src;
 }
 
 declare module '*.svg' {
@@ -69,3 +69,10 @@ declare module "arcgis-echarts3/dist/main" {
   const echarts: any;
   export default echarts;
 }
+
+declare module '*.module.less' {
+  const classes: { readonly [key: string]: string };
+  export default classes;
+}
+
+declare const GlobalConfig: any;

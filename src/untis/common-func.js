@@ -1,7 +1,7 @@
 const commonFunc = {
-    setCookie(key, value, expireTime = 24 * 60 * 60 * 1000) {
+    setCookie(key, value, expireTime) {
         const expire = new Date();
-        expire.setTime(expire.getTime() + expireTime);
+        expire.setTime(expire.getTime() + expireTime * 24 * 60 * 60 * 1000);
         document.cookie = `${key}=${escape(value)};expires=${expire.toGMTString()};path=/;`;
     },
 

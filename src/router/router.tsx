@@ -1,27 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { useAction, withStore } from 'store/store';
+import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import menuList from './routerConfig';
 import Layout from '../commons/layout/layout';
-
 import Login from 'page/login/login';
 import NotFound from '../commons/notFound/notFound';
 
-const AppRouter = () => {
-
-  const action = useAction();
-  const [isLogin, setIsLogin] = useState(sessionStorage.getItem("isLogin") === "true" ? true : false);
-
-  useEffect(() => {
-    let is = sessionStorage.getItem("isLogin") === "true" ? true : false;
-    action.changeHasAuth(is);
-    setIsLogin(is);
-  }, [sessionStorage.getItem("isLogin")]);
+const AppRouter: React.FC<{ isLogin: Boolean }> = ({ isLogin }) => {
 
   return (
     <BrowserRouter>
       <Switch>
-        { !isLogin && <Route path="/login" exact component={Login} /> }
+        {!isLogin && <Route path="/login" exact component={Login} />}
         {
           !isLogin && <Route path="*" exact render={() => <Redirect to="/login" />} />
         }
@@ -33,7 +22,7 @@ const AppRouter = () => {
                 <Route path="/notFound" exact component={NotFound} />
                 {
                   menuList.map((item, index) => (
-                    <Route key={index} path={item.path} 
+                    <Route key={index} path={item.path}
                       render={() => {
                         return <Switch>
                           {
@@ -56,4 +45,4 @@ const AppRouter = () => {
   );
 };
 
-export default withStore(AppRouter);
+export default AppRouter;

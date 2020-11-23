@@ -4,6 +4,7 @@ import './header.less';
 import logo from "../../assets/images/logo.jpg";
 import home from "../../assets/images/12.png";
 import { useAction } from '../../store/store';
+import commonFunc from 'untis/common-func';
 
 const Header = (props: any) => {
   const action = useAction();
@@ -13,6 +14,7 @@ const Header = (props: any) => {
   }
   const closePage = () => {
     sessionStorage.setItem("isLogin", "false");
+    commonFunc.removeCookie("token");
     action.changeHasAuth(false);
   }
   return (

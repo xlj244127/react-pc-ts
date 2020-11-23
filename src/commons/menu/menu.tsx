@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { withRouter } from 'react-router-dom';
 import munuList from '../../router/routerConfig';
 import './menu.less';
-import { NONAME } from 'dns';
 
 const Menus = (props: any) => {
 
@@ -71,4 +70,4 @@ const Menus = (props: any) => {
   );
 };
 
-export default withRouter(Menus);
+export default memo(withRouter(Menus));
